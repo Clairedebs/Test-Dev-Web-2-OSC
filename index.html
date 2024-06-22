@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tableu de Bords des Tâches</title>
+</head>
+
+<body>
+    <header>Gestionnaire des Tâches</header>
+    <!-- Formulaire pour l'ajout de tâches -->
+    <div class="form-container">
+    <form id="addForm">
+        <label for="taskName">Nom de la tâche:</label>
+        <input type="text" id="name" name="name" placeholder="Entrer le nom de la tâche" required>
+
+        <label for="taskDescription">Description:</label>
+        <textarea id="description" name="description" placeholder="Entrer une description" required></textarea>
+
+        <label for="taskDeadline">Date limite:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Ajouter</button>
+    </form>
+    </div>
+
+    <!-- Liste de tâche -->
+    <div id="taskList">
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
